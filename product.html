@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+    <script src="js/main-product.js" defer></script>
+
+    <link rel="stylesheet" href="css/reponsive.css" />
+    <title>MIDANG Cosmetics</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/TopHeader.gif" alt="" class="product-cart">
+        </div>
+        <div class="main-content">
+            <a href="#"><img src="images/logo.svg" alt="midang" class="logo"></a>
+            <nav class="button-search">
+                <input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+            </nav>
+
+
+            <div class="temp header-actions">
+                <div class="header__top__right__auth">
+                    <a href="login.html">
+                        <i class="fa fa-user"></i> Đăng nhập
+                    </a>
+                </div>
+                <div class="header__top__right__cart">
+                    <button id="cart-button">
+                        <span class="icon-wrapper">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span id="cart-count" class="cart-count">0</span> <!-- Số lượng sản phẩm -->
+                        </span>
+                        <span class="cart-text">Giỏ hàng</span>
+                    </button>
+
+                    <!-- Menu Dropdown Giỏ Hàng -->
+                    <div id="cart-dropdown" class="cart-dropdown" style="display: none;">
+                        <div class="cart-header">
+                            <h3>Giỏ hàng</h3>
+                            <button id="close-cart">X</button>
+                        </div>
+                        <div id="cart-items" class="cart-items"></div>
+                        <div class="cart-footer">
+                            <p id="total-price">Tổng cộng: 0₫</p>
+                            <button class="checkout-button">Thanh toán</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu">
+            <div class="temp">
+                <div class="categories">
+                    <a href="#" class="categories-header">
+                        DANH MỤC SẢN PHẨM
+                        <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="categories-content">
+                        <li><a href="#">Tẩy trang</a></li>
+                        <li><a href="#">Sữa rửa mặt</a></li>
+                        <li><a href="#">Toner</a></li>
+                        <li><a href="#">Serum</a></li>
+                        <li><a href="#">Kem dưỡng</a></li>
+                    </ul>
+
+                </div>
+                <button class="menu-toggle">
+                    <i class=" fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+
+            <nav class="nav">
+                <ul class="menu-list">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="product.html">SẢN PHẨM</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                    <li><a href="about.html">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="lab-thuc-hanh.html">LAB THỰC HÀNH</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <button class="back-to-top" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <div class="product-grid-2">
+        <div class="div-box-2" data-id="1" data-name="Nước tẩy trang bí đao Cocoon 500ml" data-brand="COCOON"
+            data-price="295000" data-old-price="450000" data-image="images/product01.jpg">
+
+            <img src="images/product01.jpg" alt="" class="product-img" />
+            <div class="brand">COCOON</div>
+            <div class="product-title">Nước tẩy trang bí đao Cocoon 500ml</div>
+            <div>
+                <span class="price">295.000₫</span>
+                <span class="old-price">450.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+
+        <div class="div-box-2" data-id="2">
+            <img src="images/product02.jpg" alt="" class="product-img" />
+            <div class="brand">COCOON</div>
+            <div class="product-title">Kem dưỡng Thạch Bí Đao cocoon 100ml</div>
+            <div>
+                <span class="price">295.000₫</span>
+                <span class="old-price">450.000₫</span>
+            </div>
+           <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="3">
+            <img src="images/product03.jpg" alt="" class="product-img" />
+            <div class="brand">NEUTROGENA</div>
+            <div class="product-title">Kem Dưỡng Neutrogena 50ML</div>
+            <div>
+                <span class="price">105.000₫</span>
+                <span class="old-price">250.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="4">
+            <img src="images/product04.jpg" alt="" class="product-img" />
+            <div class="brand">SIMPLE</div>
+            <div class="product-title">Sữa rửa mặt Simple 150ml</div>
+            <div>
+                <span class="price">295.000₫</span>
+                <span class="old-price">450.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="7">
+            <img src="images/item1.png" alt="" class="product-img-1" />
+            <div class="brand">CATAPHIL</div>
+            <div class="product-title">Sữa Rửa Mặt Cho Da Nhạy Cảm 236ml</div>
+            <div>
+                <span class="price">260.000₫</span>
+                <span class="old-price">365.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="8">
+            <img src="images/item2.png" alt="" class="product-img-1" />
+            <div class="brand">BEPLAIN</div>
+            <div class="product-title">
+                Set EPLAIN Mặt nạ 120ml & Serum 30ml
+            </div>
+            <div>
+                <span class="price">305.000₫</span>
+                <span class="old-price">565.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="9">
+            <img src="images/item3.png" alt="" class="product-img-1" />
+            <div class="brand">COCOON</div>
+            <div class="product-title">
+                Toner Nước sen Cocoon 310ml
+            </div>
+            <div>
+                <span class="price">240.000₫</span>
+                <span class="old-price">340.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="10">
+            <img src="images/item4.png" alt="" class="product-img-1" />
+            <div class="brand">NUMBUZIN</div>
+            <div class="product-title">
+                Kem Dưỡng ẩm Numbuzin No.1 80ml
+            </div>
+            <div>
+                <span class="price">380.000₫</span>
+                <span class="old-price">430.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="11">
+            <img src="images/item5.png" alt="" class="product-img-1" />
+            <div class="brand">GANIER</div>
+            <div class="product-title">
+                Serum Garnier 4% Vitamin 30ml
+            </div>
+            <div>
+                <span class="price">210.000₫</span>
+                <span class="old-price">290.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="12">
+            <img src="images/item6.png" alt="" class="product-img-1" />
+            <div class="brand">GANIER</div>
+            <div class="product-title">
+                Kem dưỡng ẩm Garnier Water Gel 50ml
+            </div>
+            <div>
+                <span class="price">280.000₫</span>
+                <span class="old-price">480.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="13">
+            <img src="images/item7.png" alt="" class="product-img-1" />
+            <div class="brand">NIACIN</div>
+            <div class="product-title">
+                Serum NIACIN Niacinamide 5% 30ml
+            </div>
+            <div>
+                <span class="price">398.000₫</span>
+                <span class="old-price">440.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="14">
+            <img src="images/item8.png" alt="" class="product-img-1" />
+            <div class="brand">RAVIEL</div>
+            <div class="product-title">
+                Serum RAVIEL Cica Panthenol 5% 30ml
+            </div>
+            <div>
+                <span class="price">299.000₫</span>
+                <span class="old-price">380.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="15">
+            <img src="images/item9.png" alt="" class="product-img-1" />
+            <div class="brand">CARYOPHY</div>
+            <div class="product-title">
+                Toner Caryophy cấp ẩm ngừa mụn 300ml
+            </div>
+            <div>
+                <span class="price">399.000₫</span>
+                <span class="old-price">450.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="16">
+            <img src="images/item10.png" alt="" class="product-img-1" />
+            <div class="brand">SKIN1004</div>
+            <div class="product-title">
+                Serum rau má SKIN1004 55ml
+            </div>
+            <div>
+                <span class="price">280.000₫</span>
+                <span class="old-price">360.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="17">
+            <img src="images/item11.png" alt="" class="product-img-1" />
+            <div class="brand">CERAVE</div>
+            <div class="product-title">
+                Gel dưỡng ẩm CeraVe 52ml
+            </div>
+            <div>
+                <span class="price">235.000₫</span>
+                <span class="old-price">338.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+        <div class="div-box-2" data-id="18">
+            <img src="images/item12.png" alt="" class="product-img-1" />
+            <div class="brand">OLAY</div>
+            <div class="product-title">
+                Kem Dưỡng Olay 50g
+            </div>
+            <div>
+                <span class="price">349.000₫</span>
+                <span class="old-price">390.000₫</span>
+            </div>
+            <button class="add-to-cart-btn">Thêm Vào Giỏ</button>
+
+        </div>
+    </div>
+
+    <div class="tittle-dang-ki">
+        <h2>Đăng kí nhận thông tin mới nhất từ MiDang Cosmetics</h2>
+    </div>
+    <div class="div-dang-ki">
+        <form class="form-dang-ki">
+            <input type="email" placeholder="Nhập địa chỉ email của bạn" required />
+            <button type="submit">Đăng Kí</button>
+        </form>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="div-footer">
+            <div class="footer-column">
+                <a href=""><img src="images/logo.svg" alt="midang" class="logo-footer" /></a>
+                <p>
+                    MiDang Cosmetics đồ án website bán mỹ phẩm cuối kỳ môn học Thực hành
+                    Nhập môn Web
+                </p>
+            </div>
+            <div class="footer-column">
+                <h2>Thông tin</h2>
+                <p class="footer-thong-tin">
+                    Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, TP Hồ Chí Minh <br />
+                    Email: DH52200445@student.stu.edu.vn <br />
+                    Điện thoại: (028) 38 505 520 <br />
+                </p>
+            </div>
+            <div class="footer-column">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9544104258935!2d106.67525717405255!3d10.737997189408455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1746768196454!5m2!1svi!2s"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <div class="footer-copyright">
+                    Họ và tên: Trần Minh Đăng | MSSV: DH52200445 | Lớp: D22_TH04 |
+                    Nhóm 8 Thứ 3 Ca 2
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
